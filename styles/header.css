@@ -1,0 +1,64 @@
+.header {
+    background-color: #f5c2dd;
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.tabs-section a {
+    border: none;
+    padding-bottom: 8px;
+    font-size: 14px;
+    transition: border-bottom .15s border-bottom-width .15s;
+    cursor: pointer;
+}
+
+.tabs-section a:hover {
+    border-bottom: solid;
+    border-bottom-width: 2px;
+}
+
+.contact-section {
+    display: flex;
+    margin-top: -8px;
+    margin-right: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.linkedin-link, .github-link, .gmail-link{
+    height: 30px;
+    width: 30px;
+    border-width: 1px;
+    transition: opacity .15s;
+    cursor: pointer;
+}
+
+.github-link {
+    height: 23px;
+    width: 23px;
+}
+
+.gmail-link {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.contact-section img:hover{
+    opacity: 50%;
+}

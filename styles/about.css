@@ -1,0 +1,55 @@
+.about {
+    background-color: #f089ad;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-title {
+    margin: 50px 0;
+    font-size: 40px;
+    border-bottom: solid;
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.img-of-me {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-top: 150px;
+}
+
+.speech-bubble-container {
+    position: relative;
+    height: 185px;
+    margin-left: -50px;
+}
+
+.speech-bubble {
+    position: relative;
+    transform: rotate(180deg);
+    height: 250px;
+    width: 500px;
+    object-fit: fill;
+}
+
+.speech-bubble-text{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+}

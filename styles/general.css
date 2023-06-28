@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    caret-color: transparent;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3000px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: dollie-script;
+    src: url(../static/fonts/DollieScript_PersonalUse.ttf);
+}
