@@ -1,11 +1,8 @@
 .home {
     background-color: rgb(248, 200, 200);
     position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 800px;
+    top: 0px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,17 +11,18 @@
 
 .background-gif {
     height: 100%;
-    width: 100%;
+    width: 101%;
     object-fit: cover;
     object-position: center;
 }
 
 .welcome-message {
     font-size: 20px;
-    color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     font-weight: bold;
+    text-align: center;
 }
 
 .welcome-message span {
@@ -32,12 +30,13 @@
     font-family: dollie-script;
     font-weight: 400;
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 .home-buttons {
     position: absolute;
     display: flex;
-    top: 75%;
+    top: 65%;
     gap: 10px;
 }
 
@@ -49,6 +48,7 @@
     border: none;
     border-radius: 3px;
     box-shadow: 0 0 4px rgba(0,0,0,.3);
+    font-family: roboto;
     transition: background-color .15s box-shadow .15s;
     cursor: pointer;
 }

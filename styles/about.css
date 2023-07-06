@@ -1,55 +1,107 @@
 .about {
-    background-color: #f089ad;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 800px;
+    background-color: rgb(252, 227, 227);
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
-.about-title {
-    margin: 50px 0;
-    font-size: 40px;
-    border-bottom: solid;
-}
 
-.info-container {
+.info {
     display: flex;
     width: 100%;
-    margin-left: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
 }
 
-.img-of-me {
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
-    margin-top: 150px;
+.about-me {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
 }
 
-.speech-bubble-container {
-    position: relative;
-    height: 185px;
-    margin-left: -50px;
-}
-
-.speech-bubble {
-    position: relative;
-    transform: rotate(180deg);
-    height: 250px;
+.about-me img {
     width: 500px;
-    object-fit: fill;
+    height: 500px;
+    object-fit:cover;
+    object-position: top;
+    border: none;
+    border-radius: 250px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}  
+
+.description-container {
+    padding: 10px 50px;
 }
 
-.speech-bubble-text{
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    line-height: 1.5;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+.description-title {
+    font-size: 30px;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    font-family: roboto;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(85, 85, 85);
     font-size: 16px;
+    line-height: 20px;
+}
+
+.description a {
+    font-family: dollie-script;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(253, 48, 82);
+    transition: hover .15s;
+}
+
+.description a:hover{
+    opacity: 50%;
+}
+
+.skills-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.bar {
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    width: 500px;
+    height: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bar-fill {
+    background-color: rgba(255, 105, 130, .4);
+    display: flex;
+    height: 30px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+}
+
+.skill {
+    height: 30px;
+    background-color: rgb(255, 149, 167);
+    display: flex;
+    align-items: center;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: roboto;
 }

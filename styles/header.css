@@ -1,5 +1,5 @@
 .header {
-    background-color: #f5c2dd;
+    background-color: #ffcae6;
     box-shadow: 0 0 20px rgba(0,0,0,.7);
     position: fixed;
     z-index: 200;
@@ -22,6 +22,7 @@
     border: none;
     padding-bottom: 8px;
     font-size: 14px;
+    color: rgb(0, 0, 0);
     transition: border-bottom .15s border-bottom-width .15s;
     cursor: pointer;
 }
