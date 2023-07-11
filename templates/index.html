@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/about.css">
     <link rel="stylesheet" href="/styles/portfolio.css">
+    <link rel="stylesheet" href="/styles/contact.css">
 </head>
 <body>
     <div class="header">
         <div class="tabs-section">
-            <a class="home-tab">Home</a>
-            <a class="about-tab">About</a>
-            <a class="portfolio-tab">Portfolio</a>
+            <a id="home-tab" class="selected-tab">Home</a>
+            <a id="about-tab" class="unselected-tab">About</a>
+            <a id="portfolio-tab" class="unselected-tab">Portfolio</a>
         </div>
         <div class="contact-section">
             <p>Contact:</p>
@@ -33,7 +34,7 @@
             </a>
         </div>
     </div>
-    <div class="home">
+    <div id="home" class="home">
         <img class="background-gif" src="../static/gifs/pink+mountains.gif" alt="">
         <p class="welcome-message">Hello! I am <span>Cyaira Hughes</span> and I am a Software Developer.</p>
         <div class="home-buttons">
@@ -43,7 +44,7 @@
             <button class="contact-button">Contact Me</button>
         </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
         <div class="title">About</div>
         <div class="info">
             <div class="about-me">
@@ -63,62 +64,62 @@
                     </p>
                 </div>
             </div>
-            <div class="skills-container">
+            <div id='skills-container' class="skills-container">
                 <div class="bar">
                     <span class="skill">Java</span>
-                    <span class="bar-fill" style="width:340px">85%</span>
+                    <span class="bar-fill" style="width:85%"><p>85%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">Python</span>
-                    <span class="bar-fill" style="width:320px">80%</span>
+                    <span class="bar-fill" style="width:80%"><p>80%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">C#</span>
-                    <span class="bar-fill" style="width:320px">80%</span>
+                    <span class="bar-fill" style="width:80%"><p>80%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">HTML</span>
-                    <span class="bar-fill" style="width:300px">75%</span>
+                    <span class="bar-fill" style="width:75%"><p>75%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">CSS</span>
-                    <span class="bar-fill" style="width:300px">75%</span>
+                    <span class="bar-fill" style="width:75%"><p>75%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">JavaScript</span>
-                    <span class="bar-fill" style="width:200px">50%</span>
+                    <span class="bar-fill" style="width:50%"><p>50%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">SQL</span>
-                    <span class="bar-fill" style="width:280px">70%</span>
+                    <span class="bar-fill" style="width:70%"><p>70%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">R</span>
-                    <span class="bar-fill" style="width:260px">65%</span>
+                    <span class="bar-fill" style="width:65%"><p>65%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">UNITY</span>
-                    <span class="bar-fill" style="width:280px">70%</span>
+                    <span class="bar-fill" style="width:70%"><p>70%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">React</span>
-                    <span class="bar-fill" style="width:200px">50%</span>
+                    <span class="bar-fill" style="width:50%"><p>50%</p></span>
                 </div>
                 <div class="bar">
                     <span class="skill">Angular</span>
-                    <span class="bar-fill" style="width:200px">50%</span>
+                    <span class="bar-fill" style="width:50%"><p>50%</p></span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <div class="title">Projects</div>
         <div class="sort-container">
             <div class="sort-box">ALL</div>
         </div>
         <div class="project-container">
             <div class="project">
-                <img class="project-preview" src="/static/images/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="">
+                <img class="project-preview" src="/static/images/50384947_00801_0155_Large.jpg" alt="">
                 <p class="project-name">hello world</p>
             </div>
             <div class="project">
@@ -135,5 +136,16 @@
             </div>
         </div>
     </div>
+    <div class="contact">
+        <div class="title">Contact</div>
+        <form class="form-container" action="">
+            <input class="input-field" type="text" placeholder="Name">
+            <input class="input-field" type="text" placeholder="Email">
+            <textarea class="input-field message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+<script src="/scripts/header.js"></script>
+<script src="/scripts/about.js"></script>
 </body>
 </html>
