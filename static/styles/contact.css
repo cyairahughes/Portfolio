@@ -1,0 +1,76 @@
+.contact {
+    background-color: rgb(255, 214, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    max-width: 800px;
+}
+
+.save {
+    
+}
+
+.input-field {
+    min-width: 500px;
+    min-height: 30px;
+    max-height: 800px;
+    max-width: 800px;
+    background-color: rgb(255, 149, 167);
+    border: none;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    cursor:text;
+    border-radius: 3px;
+    padding-right: 8px;
+    transition: backgroud-color .15s;
+}
+
+.input-field::placeholder{
+    color: rgba(255, 255, 255, .75);
+    font-weight: bold;
+}
+
+.input-field[type='text']{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial;
+    padding-left: 8px;
+}
+
+.input-field:focus {
+    outline: none;
+    caret-color: white;
+}
+
+.input-field:focus::placeholder {
+    color: transparent;
+}
+
+.message {
+    height: 100px;
+    padding-top: 8px;
+    padding-left: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial;
+}
+.submit-button {
+    margin-top: -3px;
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 149, 167);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}

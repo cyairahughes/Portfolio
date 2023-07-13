@@ -6,13 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../static/logos/favicon.png">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/general.css">
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/portfolio.css">
-    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="icon" href="/static/logos/favicon.png">
+    <link rel="stylesheet" href="/static/styles/header.css">
+    <link rel="stylesheet" href="/static/styles/general.css">
+    <link rel="stylesheet" href="/static/styles/home.css">
+    <link rel="stylesheet" href="/static/styles/about.css">
+    <link rel="stylesheet" href="/static/styles/portfolio.css">
+    <link rel="stylesheet" href="/static/styles/contact.css">
 </head>
 <body>
     <div class="header">
@@ -20,35 +20,39 @@
             <a id="home-tab" class="selected-tab">Home</a>
             <a id="about-tab" class="unselected-tab">About</a>
             <a id="portfolio-tab" class="unselected-tab">Portfolio</a>
+            <a id="contact-tab" class="unselected-tab">Contact</a>
         </div>
         <div class="contact-section">
             <p>Contact:</p>
             <a href="http://linkedin.com/in/cyaira-hughes" target="_blank">
-                <img class="linkedin-link" src="../static/logos/png-transparent-linkedin-computer-icons-blog-logo-watercolor-butterfly-angle-text-rectangle.png" >
+                <img class="linkedin-link" src="/static/logos/linkedin-logo.png">
             </a>
             <a href="http://github.com/cyairahughes" target="_blank">
-                <img class="github-link" src="../static/logos/github-mark.png" alt="">
+                <img class="github-link" src="/static/logos/github-logo.png">
             </a>
             <a href="mailto:cyairahughes@gmail.com"> 
-                <img class="gmail-link" src="../static/logos/png-transparent-new-logo-gmail-google-new-logos-icon-thumbnail.png" alt="">
+                <img class="gmail-link" src="/static/logos/gmail-logo.png">
             </a>
         </div>
     </div>
     <div id="home" class="home">
-        <img class="background-gif" src="../static/gifs/pink+mountains.gif" alt="">
-        <p class="welcome-message">Hello! I am <span>Cyaira Hughes</span> and I am a Software Developer.</p>
+        <img class="background-gif" src="/static/gifs/background.gif" alt="">
+        <p id="demo"></p>
+        <p id="welcome-message" class="welcome-message">Hello I am 
+            <span id="welcome-message1">Cyaira Hughes </span>
+            and I am a Software Developer.</p>
         <div class="home-buttons">
-            <a href="../static/documents/Software Engineer Resume.pdf" target="_blank">
+            <a href="/static/documents/resume.pdf" target="_blank">
                 <button class="resume-button">Resume</button>
             </a>
-            <button class="contact-button">Contact Me</button>
+            <button id="contact-button" class="contact-button">Contact Me</button>
         </div>
     </div>
     <div id="about" class="about">
         <div class="title">About</div>
         <div class="info">
             <div class="about-me">
-                <img src="../static/images/50384947_00801_0155_Large.jpg">
+                <img src="/static/images/profile-picture.jpg">
                 <div class="description-container">
                     <p class="description-title">Who's Behind the Code?<p>
                     <p class="description">
@@ -119,33 +123,34 @@
         </div>
         <div class="project-container">
             <div class="project">
-                <img class="project-preview" src="/static/images/50384947_00801_0155_Large.jpg" alt="">
+                <img class="project-preview" src="/static/images/default.png">
                 <p class="project-name">hello world</p>
             </div>
             <div class="project">
-                <img class="project-preview" src="/static/images/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="">
+                <img class="project-preview" src="/static/images/default.png">
                 <p class="project-name">hello world</p>
             </div>
             <div class="project">
-                <img class="project-preview" src="/static/images/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="">
+                <img class="project-preview" src="/static/images/default.png">
                 <p class="project-name">hello world</p>
             </div>
             <div class="project">
-                <img class="project-preview" src="/static/images/676-6764065_default-profile-picture-transparent-hd-png-download.png" alt="">
+                <img class="project-preview" src="/static/images/default.png">
                 <p class="project-name">hello world</p>
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="title">Contact</div>
         <form class="form-container" action="">
             <input class="input-field" type="text" placeholder="Name">
             <input class="input-field" type="text" placeholder="Email">
             <textarea class="input-field message" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+            <button class="submit-button" type="submit">Submit</button>
         </form>
     </div>
-<script src="/scripts/header.js"></script>
-<script src="/scripts/about.js"></script>
+<script src="/static/scripts/header.js"></script>
+<script src="/static/scripts/about.js"></script>
+<script src="/static/scripts/home.js"></script>
 </body>
 </html>

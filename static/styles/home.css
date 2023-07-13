@@ -1,0 +1,93 @@
+.home {
+    background-color: rgb(248, 200, 200);
+    position: relative;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-gif {
+    height: 100%;
+    width: 101%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.welcome-message {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    text-align: center;
+    border-right: solid 4px rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+}
+
+.welcome-message span {
+    color: rgb(253, 48, 82);
+    font-family: dollie-script;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.home-buttons {
+    position: absolute;
+    display: flex;
+    top: 65%;
+    gap: 10px;
+}
+
+.resume-button, .contact-button {
+    width: 100px;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(92, 92, 92);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    font-family: roboto;
+    transition: background-color .15s box-shadow .15s;
+    cursor: pointer;
+}
+
+.contact-button {
+    background-color: rgb(253, 48, 82);
+    color: white;
+}
+
+.resume-button:hover{
+    background-color: rgba(255, 255, 255, .5);
+} 
+
+.contact-button:hover {
+    background-color: rgba(253, 48, 82, .5);
+}
+
+.resume-button:active, .contact-button:active {
+    box-shadow: 0 0 4px rgba(0,0,0,0);
+}
+/* Animation */
+.welcome-message {
+    animation: animated-text 3s steps(35,end) 1s normal both,
+               animated-cursor 600ms steps(35,end) 3s;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 630px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(255, 255, 255, 0.75);}
+    to{border-right-color: transparent;}
+  }
