@@ -32,14 +32,14 @@ app.post('/', function(req, res) {
         "message": req.body.message
     }
 
-    /*transporter.sendMail({
+    transporter.sendMail({
         from: contact_info.name + ' ' + contact_info.email,
         to: "cyairahughes@gmail.com",
         subject: contact_info.name + ' ' + "was interested in your portfolio.", 
         text: contact_info.message,
       }).then(info => {
         console.log({info});
-      }).catch(console.error);*/
+      }).catch(console.error);
 
 });
 

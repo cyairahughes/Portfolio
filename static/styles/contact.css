@@ -26,6 +26,7 @@
     border-radius: 3px;
     padding-right: 8px;
     transition: backgroud-color .15s;
+    font-family: Roboto;
 }
 
 .input-field::placeholder{
@@ -36,7 +37,7 @@
 .input-field[type='text'], .input-field[type='email']{
     color: rgb(255, 255, 255);
     font-size: 16px;
-    font-family: Arial;
+    font-family: Roboto;
     padding-left: 8px;
 }
 
@@ -57,7 +58,7 @@
     padding-left: 8px;
     color: rgb(255, 255, 255);
     font-size: 16px;
-    font-family: Arial;
+    font-family: Roboto;
 }
 
 .submit-button-container{
@@ -72,7 +73,7 @@
     border: none;
     background-color: rgb(255, 255, 255);
     color: rgb(255, 149, 167);
-    font-family: Arial;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: bold;
     border-radius: 20px;
