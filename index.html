@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/static/logos/favicon.png">
+    <link rel="icon" href="static/logos/favicon.png">
     <link rel="stylesheet" href="static/styles/header.css">
     <link rel="stylesheet" href="static/styles/general.css">
     <link rel="stylesheet" href="static/styles/home.css">
@@ -25,7 +25,7 @@
         <div class="contact-section">
             <p>Contact:</p>
             <a href="http://linkedin.com/in/cyaira-hughes" target="_blank">
-                <img class="linkedin-link" src="static/logos/linkedin-logo.png">
+                <img class="linkedin-link" src="/static/logos/linkedin-logo.png">
             </a>
             <a href="http://github.com/cyairahughes" target="_blank">
                 <img class="github-link" src="static/logos/github-logo.png">
@@ -123,34 +123,26 @@
         </div>
         <div class="project-container">
             <div class="project">
-                <img class="project-preview" src="static/images/default.png">
-                <p class="project-name">hello world</p>
-            </div>
-            <div class="project">
-                <img class="project-preview" src="static/images/default.png">
-                <p class="project-name">hello world</p>
-            </div>
-            <div class="project">
-                <img class="project-preview" src="static/images/default.png">
-                <p class="project-name">hello world</p>
-            </div>
-            <div class="project">
-                <img class="project-preview" src="static/images/default.png">
-                <p class="project-name">hello world</p>
+                <!--<img class="project-preview" src="">-->
+                <p class="project-name"></p>
             </div>
         </div>
     </div>
     <div id="contact" class="contact">
         <div class="title">Contact</div>
-        <form class="form-container" action="">
-            <input class="input-field" type="text" placeholder="Name">
-            <input class="input-field" type="text" placeholder="Email">
-            <textarea class="input-field message" placeholder="Message"></textarea>
-            <button class="submit-button" type="submit">Submit</button>
+        <form id='form' class="form-container" action="/" method="post">
+            <input name="name" class="input-field" type="text" placeholder="Name" required>
+            <input name="email" class="input-field" type="email" placeholder="Email" required>
+            <textarea name="message" class="input-field message" placeholder="Message" required></textarea>
+            <div class="submit-button-container">
+                <button id="submit-button" class="submit-button" type="submit">Submit</button>
+            </div>
         </form>
     </div>
 <script src="static/scripts/header.js"></script>
 <script src="static/scripts/about.js"></script>
 <script src="static/scripts/home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="static/scripts/contact.js"></script>
 </body>
 </html>
