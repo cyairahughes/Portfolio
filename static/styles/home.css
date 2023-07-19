@@ -17,22 +17,19 @@
 }
 
 .welcome-message {
-    font-size: 20px;
+    font-size: 3vh;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     font-weight: bold;
     text-align: center;
-    border-right: solid 4px rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;    
 }
 
 .welcome-message span {
     color: rgb(253, 48, 82);
     font-family: dollie-script;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 4vh;
     text-transform: capitalize;
 }
 
@@ -72,22 +69,3 @@
 .resume-button:active, .contact-button:active {
     box-shadow: 0 0 4px rgba(0,0,0,0);
 }
-/* Animation */
-.welcome-message {
-    animation: animated-text 3s steps(35,end) 1s normal both,
-               animated-cursor 600ms steps(35,end) 3s;
-  }
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 630px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(255, 255, 255, 0.75);}
-    to{border-right-color: transparent;}
-  }
