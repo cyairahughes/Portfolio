@@ -1,26 +1,28 @@
 .home {
-    background-color: rgb(248, 200, 200);
+    background-color: rgb(252, 227, 227);
     position: relative;
-    top: 0;
-    height: 100%;
+    top: 5vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5vh;
 }
 
 .background-gif {
     height: 100%;
     width: 101%;
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
 }
 
 .welcome-message {
-    font-size: 3vh;
+    font-size: 3vw;
+    padding: 5vw;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 50%;
+    top: 35%;
     font-weight: bold;
     text-align: center;
 }
@@ -29,14 +31,15 @@
     color: rgb(253, 48, 82);
     font-family: dollie-script;
     font-weight: 400;
-    font-size: 4vh;
+    font-size: 4vw;
     text-transform: capitalize;
 }
 
 .home-buttons {
+    margin-top: 10vw;
     position: absolute;
     display: flex;
-    top: 65%;
+    top: 50%;
     gap: 3vw;
 }
 

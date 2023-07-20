@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="static/styles/about.css">
     <link rel="stylesheet" href="static/styles/portfolio.css">
     <link rel="stylesheet" href="static/styles/contact.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="header">
@@ -113,12 +114,31 @@
         <div class="sort-container">
             <div class="sort-box">ALL</div>
         </div>
-        <div class="project-container">
-            <div class="project">
-                <!--<img class="project-preview" src="">-->
-                <p class="project-name"></p>
-            </div>
+        <!-- Trigger/Open the Modal -->
+        <div onclick="document.getElementById('myModal').style.display='block'" class="project-container">
+            <button class="project">
+                <img class="project-preview" src="static/images/box-battle-1.png">
+                <p class="project-name">Box Battle</p>
+            </button>
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="w3-modal">
+            <div class="w3-modal-content">
+                <span class="w3-text-black w3-xxlarge w3-hover-text-grey w3-container w3-right" onclick="closeModal()" style="cursor:pointer">×</span>
+             <div class="w3-content" >
+              <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+              <img class="mySlides modal-img" src="static/images/box-battle-2.png" >
+              <img class="mySlides modal-img" src="static/images/box-battle-3.png" >
+              <img class="mySlides modal-img" src="static/images/box-battle-4.png" >
+              <img class="mySlides modal-img" src="static/images/box-battle-6.png" >
+              <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+              <div class="">
+               hi
+              </div> <!-- End row -->
+             </div> <!-- End w3-content -->
+             
+            </div> <!-- End modal content -->
+           </div> <!-- End modal -->           
     </div>
     <div id="contact" class="contact">
         <div class="title">Contact</div>
@@ -147,5 +167,43 @@
 <script src="static/scripts/home.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="static/scripts/contact.js"></script>
+<script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 </body>
 </html>

@@ -76,6 +76,7 @@
     border-radius: 2vh;
     box-shadow: 0 0 .4vh rgba(0,0,0,.4);
     width: 15vw;
+    cursor: pointer;
 }
 
 .submit-button:hover {
