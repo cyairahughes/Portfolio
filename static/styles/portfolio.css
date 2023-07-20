@@ -39,12 +39,12 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1090px;
-    gap: 20px;
+    gap: 3vh;
 }
 
 .project {
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     transition: opacity .15s;
     box-shadow: 0 0 3px rgba(0,0,0,.5);
@@ -68,25 +68,31 @@
 
 .project-preview {
     cursor: pointer;
-    width: 40vw;
-    height: 40vw;
+    width: 40vh;
+    height: 40vh;
     object-fit:cover;
     object-position: top;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
 
-.w3-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.132);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
     justify-content: center;
-    padding: 0;
-    margin: 0;
 }
 
-.modal-img {
-    height: 50vh;
-    width: 30vh;
-    margin: 2vh;
+.modal-container{
+    position: relative;
+    min-height: 60%;
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    z-index: 1100;
 }
