@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 15vh;
 }
 
 
@@ -12,33 +12,33 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 50px;
+    row-gap: 10vh;
 }
 
 .about-me {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5vh;
     align-items: center;
 }
 
 .about-me img {
-    width: 500px;
-    height: 500px;
+    width: 55vh;
+    height: 55vh;
     object-fit:cover;
     object-position: top;
     border: none;
-    border-radius: 250px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    border-radius: 30vh;
+    box-shadow: 0px 0px 1.5vh rgba(0,0,0,1);
 }  
 
 .description-container {
-    padding: 10px 50px;
+    padding: 0 3vh;
 }
 
 .description-title {
-    font-size: 30px;
+    font-size: 4vh;
     color: rgb(85, 85, 85);
     text-align: center;
     font-family: roboto;
@@ -46,15 +46,14 @@
 
 .description {
     text-align: center;
-    margin-top: 10px;
+    margin-top: .5vh;
     color: rgb(85, 85, 85);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 2.5vh;
 }
 
 .description a {
     font-family: dollie-script;
-    font-size: 20px;
+    font-size: 3vh;
     cursor: pointer;
     color: rgb(253, 48, 82);
     transition: hover .15s;
@@ -69,15 +68,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 3vh;
 }
 
 .bar {
     background-color: rgba(255, 255, 255);
     display: grid;
     grid-template-columns: 100px 1fr;
-    width: 500px;
-    height: 30px;
+    width: 60vh;
+    height: 4vh;
     align-items: center;
     justify-content: flex-start;
 }
@@ -85,27 +84,27 @@
 .bar-fill {
     background-color: rgba(255, 105, 130, .4);
     display: flex;
-    height: 30px;
+    height: 4vh;
     justify-content: end;
     align-items: center;
 }
 
 .bar-fill p {
-    margin-right: 5px;
+    margin-right: 1vw;
     font-weight: bold;
     color: rgb(85, 85, 85);
+    font-size: 2vh;
 }
 
 .skill {
-    height: 30px;
+    height: 4vh;
     background-color: rgb(255, 149, 167);
     display: flex;
     align-items: center;
-    width: 100px;
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 16px;
+    font-size: 2vh;
     font-weight: bold;
     font-family: roboto;
 }

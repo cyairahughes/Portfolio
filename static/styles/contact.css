@@ -4,27 +4,25 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 15vh;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px;
-    border: none;
-    width: 800px;
+    gap: .5vh;
+    justify-content: stretch;
 }
 
 .input-field {
-    width: 800px;
     background-color: rgb(255, 149, 167);
     border: none;
-    height: 35px;
+    height: 4vh;
+    width: 70vw;
     color: rgb(255, 255, 255);
     cursor:text;
-    border-radius: 3px;
-    padding-right: 8px;
+    border-radius: .3vh;
     transition: backgroud-color .15s;
     font-family: Roboto;
 }
@@ -32,13 +30,14 @@
 .input-field::placeholder{
     color: rgba(255, 255, 255, .75);
     font-weight: bold;
+    font-size: 2vh;
 }
 
 .input-field[type='text'], .input-field[type='email']{
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 2vh;
     font-family: Roboto;
-    padding-left: 8px;
+    padding: 0 1vh;
 }
 
 .input-field:focus {
@@ -51,38 +50,78 @@
 }
 
 .message {
-    height: 250px;
-    max-height: 500px;
-    max-width: 800px;
-    padding-top: 8px;
-    padding-left: 8px;
+    height: 20vw;
+    width: 70vw;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 2vh;
     font-family: Roboto;
+    padding: 1vh 1vh;
 }
 
 .submit-button-container{
-    width: 800px;
+    width: 70vw;
     display: flex;
     justify-content: end;
 }
 
 .submit-button {
-    margin-top: 8px;
-    height: 40px;
+    margin-top: 1vh;
+    height: 4vh;
     border: none;
     background-color: rgb(255, 255, 255);
     color: rgb(255, 149, 167);
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 2vh;
     font-weight: bold;
-    border-radius: 20px;
-    box-shadow: 0px 0px 3px rgba(0,0,0,.4);
-    padding: 0 10px;
-    width: 200px;
+    border-radius: 2vh;
+    box-shadow: 0 0 .4vh rgba(0,0,0,.4);
+    width: 15vw;
 }
 
 .submit-button:hover {
     opacity: 75%;
+}
+
+.footer {
+    background-color: rgb(253, 48, 82);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    padding-bottom: 2vh;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.icon {
+    height: 10vh;
+    cursor: pointer;
+    border-radius: 20vh;
+    transition: opacity .15s border .15s;
+}
+
+.footer p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5vh;
+}
+
+.footer p span {
+    color: black;
+}
+
+.icon:hover{
+    opacity: 50%;
+}
+
+.icon:active{
+    border: none;
 }
 

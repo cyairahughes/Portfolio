@@ -15,15 +15,13 @@
     flex: 1;
     display: flex;
     justify-content: left;
-    gap: 20px;
-    margin-left: 20px;
+    gap: 3vw;
+    margin-left: 3vw;
     align-items: center;
-    width: 300px;
 }
 .unselected-tab {
     border: none;
-    padding-bottom: 8px;
-    font-size: 20px;
+    font-size: 2.5vh;
     color: rgb(0, 0, 0);
     transition: color .25s opacity .25s;
     cursor: pointer;
@@ -32,8 +30,7 @@
 
 .selected-tab {
     border: none;
-    padding-bottom: 8px;
-    font-size: 20px;
+    font-size: 2.5vh;
     color: rgb(253, 48, 82);
     font-weight: 600;
     cursor: pointer;
@@ -42,39 +39,5 @@
 
 .unselected-tab:hover {
     color: rgb(253, 48, 82);
-    opacity: 50%;
-}
-
-.contact-section {
-    flex: 1;
-    display: flex;
-    margin-top: -8px;
-    margin-right: 8px;
-    justify-content: right;
-    align-items: center;
-    font-size: 14px;
-}
-
-.linkedin-link, .github-link, .gmail-link{
-    height: 30px;
-    width: 30px;
-    border-width: 1px;
-    transition: opacity .15s;
-    cursor: pointer;
-}
-
-.github-link {
-    height: 23px;
-    width: 23px;
-}
-
-.gmail-link {
-    height: 25px;
-    width: 25px;
-    object-fit: contain;
-    margin-left: 5px;
-}
-
-.contact-section img:hover{
     opacity: 50%;
 }
