@@ -126,20 +126,107 @@
     </div>
     <div id="portfolio" class="portfolio">
         <div class="title">Projects</div>
-        <div class="sort-container">
+        <!-- <div class="sort-container">
             <div class="sort-box">ALL</div>
-        </div>
+        </div> -->
         <div class="project-container">
-            <button class="project" onclick='document.getElementById("modal").style.display = "flex";'>
-                <img class="project-preview" src="static/images/box-battle-6.png">
-                <p class="project-name">Box Battle</p>
-            </button>
+            <button class="project">
+                <img class="project-preview" src="static/images/magna/magna-1.png">
+            </button>       
+            <button class="project">
+                <img class="project-preview" src="static/images/box-battle/box-battle-1.png">
+            </button>    
+            <button class="project">
+                <img class="project-preview" src="static/images/protein-prediction/protein-prediction-1.jfif">
+            </button>    
         </div>
-        <div id="modal" class="modal">
-            <div class="modal-container"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="exit-modal-button-container"><button class="exit-modal-button">&times;</button></div>
+                <div class="modal-display">
+                    <img class="modal-img" src="static/images/magna/magna-1.png">
+                    <img class="modal-img" src="static/images/magna/magna-2.png">
+                    <img class="modal-img" src="static/images/magna/magna-3.jpg">
+                    <img class="modal-img" src="static/images/magna/magna-4.png">
+                    <video class="modal-img" src="static/images/magna/magna-5.mov" controls>
+                </div>
+                <div class="modal-buttons">
+                    <span class="next-button modal-left">❮</span>
+                <span class="next-button modal-right">❯</span>
+                </div>
+                <div class="modal-description-container">
+                    <p class="modal-text-title">Magna Forma<p>
+                        <p class="modal-text-subtitle">Traversing Mars Through Robotic Movement<p>
+                    <p class="modal-text-description">
+                        Allows users to explore Martian topography without specialized 
+                        equipment or physical travel. 
+                    </p>
+                    <p class="modal-text-description">Technologies: Unity, C#, Python, Robot Studio, HoloLens, ABB</p>
+                    <p class="modal-text-description">Information: 
+                        <a target="_blank" href="static/images/magna/magna-poster.pdf" style="cursor: pointer;">Poster</a>
+                        &nbsp;&nbsp;
+                        <a target="_blank" href="static/images/magna/magna-abstract.pdf" style="cursor: pointer;">Abstract</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="exit-modal-button-container"><button class="exit-modal-button">&times;</button></div>
+                <div class="modal-display">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-1.png">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-2.png">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-3.png">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-4.png">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-5.png">
+                    <img class="modal-img" src="static/images/box-battle/box-battle-6.png">
+                </div>
+                <div class="modal-buttons">
+                    <span class="next-button modal-left">❮</span>
+                <span class="next-button modal-right">❯</span>
+                </div>
+                <div class="modal-description-container">
+                    <p class="modal-text-title">Box-Battle<p>
+                        <p class="modal-text-subtitle">A Dots and Boxes Game<p>
+                    <p class="modal-text-description">
+                        Box-Battle is an android application used to play the popular Dots and Boxes game. 
+                    </p>
+                    <p class="modal-text-description">Technologies: Android Studio, Java</p>
+                    <p class="modal-text-description">Source Code: <a target="_blank" href="https://github.com/475Group/Box-Battle" style="cursor: pointer;;">Github</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="exit-modal-button-container"><button class="exit-modal-button">&times;</button></div>
+                <div class="modal-display">
+                    <img class="modal-img" src="static/images/protein-prediction/protein-prediction-5.jpg">
+                    <img class="modal-img" src="static/images/protein-prediction/protein-prediction-2.jpg">
+                    <img class="modal-img" src="static/images/protein-prediction/protein-prediction-3.jpg">
+                    <img class="modal-img" src="static/images/protein-prediction/protein-prediction-4.jpg">
+                </div>
+                <div class="modal-buttons">
+                    <span class="next-button modal-left">❮</span>
+                <span class="next-button modal-right">❯</span>
+                </div>
+                <div class="modal-description-container">
+                    <p class="modal-text-title">Protein Prediction<p>
+                        <p class="modal-text-subtitle">A Prediction Problem<p>
+                    <p class="modal-text-description">
+                        Using KNN classification models for the prediction of
+                        proteins that interact with DNA, RNA, DRNA and nonDRNA.
+                    </p>
+                    <p class="modal-text-description">Technologies: RapidMiner</p>
+                    <p class="modal-text-description">Information: 
+                        <a target="_blank" href="static/images/protein-prediction/Presentation Slides - Group #01.pdf" style="cursor: pointer;">Presentation</a>
+                        &nbsp;&nbsp;
+                        <a target="_blank" href="static/images/protein-prediction/Final Report - Group #01.pdf" style="cursor: pointer;">Report</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="contact" class="contact">
+    <!-- <div id="contact" class="contact"> 
         <div class="title">Contact</div>
         <form id='form' class="form-container" action="/" method="post">
             <input name="name" class="input-field" type="text" placeholder="Name" required>
@@ -150,6 +237,7 @@
             </div>
         </form>
     </div>
+    -->
     <footer class="footer">
         <div class="icon-container">
             <a href="http://github.com/cyairahughes" target="_blank">
@@ -161,10 +249,11 @@
         </div>
         <p>Cyaira Hughes <span>&copy2023</span></p>
       </footer>
-<script src="static/scripts/header.js"></script>
-<script src="static/scripts/about.js"></script>
-<script src="static/scripts/home.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="static/scripts/contact.js"></script>
+    <script src="static/scripts/header.js"></script>
+    <script src="static/scripts/about.js"></script>
+    <script src="static/scripts/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="static/scripts/contact.js"></script>
+    <script src="static/scripts/portfolio.js"></script>
 </body>
 </html>
